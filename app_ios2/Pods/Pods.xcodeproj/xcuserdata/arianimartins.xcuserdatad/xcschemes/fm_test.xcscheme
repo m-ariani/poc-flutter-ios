@@ -14,9 +14,9 @@
             buildForAnalyzing = "YES">
             <BuildableReference
                BuildableIdentifier = "primary"
-               BlueprintIdentifier = "E55D6D9CE3B34ED87310823EE348579B"
-               BuildableName = "my_flutter"
-               BlueprintName = "my_flutter"
+               BlueprintIdentifier = "89CAF95490D3E9FBBEF2561BDCDA5CB9"
+               BuildableName = "fm_test"
+               BlueprintName = "fm_test"
                ReferencedContainer = "container:Pods.xcodeproj">
             </BuildableReference>
          </BuildActionEntry>
