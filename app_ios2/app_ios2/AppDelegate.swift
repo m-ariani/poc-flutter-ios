@@ -9,18 +9,18 @@ import UIKit
 import Flutter
 
 @main
-class AppDelegate: UIResponder, UIApplicationDelegate /*FlutterAppDelegate*/ {
-    //var window: UIWindow?
+class AppDelegate: UIResponder, UIApplicationDelegate /*1FlutterAppDelegate*/ {
+    //1var window: UIWindow?
     lazy var flutterEngine = FlutterEngine(name: "MyFlutterEngine")
 
 
     /*override*/func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplication.LaunchOptionsKey: Any]?) -> Bool {
-        //self.flutterEngine = flutterEngine(name:"io.flutter", project:nil)
+        //1self.flutterEngine = flutterEngine(name:"io.flutter", project:nil)
         self.flutterEngine.run(withEntrypoint: nil)
         return true
-        //flutterEngine.run();
-        //GeneratedPluginRegistrant.register(with: self.flutterEngine);
-        //return super.application(application, didFinishLaunchingWithOptions: launchOptions);
+        //1flutterEngine.run();
+        //1GeneratedPluginRegistrant.register(with: self.flutterEngine);
+        //1return super.application(application, didFinishLaunchingWithOptions: launchOptions);
     }
 
     // MARK: UISceneSession Lifecycle
