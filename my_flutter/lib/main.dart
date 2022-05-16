@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:flutter/services.dart';
+import 'package:my_flutter/second-page.dart';
 
 void main() => runApp(const MyApp());
 
@@ -28,9 +29,15 @@ class MyHomePage extends StatefulWidget {
 }
 
 class _MyHomePageState extends State<MyHomePage> {
-
   void _returnIOS() {
     SystemNavigator.pop(animated: true);
+  }
+
+  void _proxima() {
+    Navigator.push(
+      context,
+      MaterialPageRoute(builder: (context) => const SecondPage()),
+    );
   }
 
   @override
@@ -43,8 +50,18 @@ class _MyHomePageState extends State<MyHomePage> {
         child: Column(
           mainAxisAlignment: MainAxisAlignment.center,
           children: <Widget>[
-            const Text('Você está numa aplicação Flutter 2!'),
-            ElevatedButton(onPressed: ()=>_returnIOS(), child: const Text('Voltar para iOS')),
+            const Text('Você está numa aplicação Flutter 3!'),
+            ElevatedButton(
+              onPressed: () => _returnIOS(),
+              child: const Text('Voltar para iOS'),
+            ),
+            const SizedBox(
+              height: 50,
+            ),
+            ElevatedButton(
+              onPressed: () => _proxima(),
+              child: const Text('Próxima página Flutter'),
+            ),
           ],
         ),
       ), // This trailing comma makes auto-formatting nicer for build methods.
